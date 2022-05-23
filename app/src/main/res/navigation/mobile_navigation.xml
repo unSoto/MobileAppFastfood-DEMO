@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.fastwood.voodoo.ui.home.HomeFragment"
+        android:label="Главная"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_daily_meal"
+        android:name="com.fastwood.voodoo.ui.dailymeal.DailyMealFragment"
+        android:label="Еда на каждый день"
+        tools:layout="@layout/daily_meal_fragment" />
+
+    <fragment
+        android:id="@+id/nav_favourite"
+        android:name="com.fastwood.voodoo.ui.favourite.FavouriteFragment"
+        android:label="Популярное"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/nav_my_cart"
+        android:name="com.fastwood.voodoo.ui.MyCartFragment"
+        android:label="Моя корзина"
+        tools:layout="@layout/fragment_my_cart" />
+</navigation>
